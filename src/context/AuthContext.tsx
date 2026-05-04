@@ -66,6 +66,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
       firstName: 'David',
       lastName: 'Admin',
       email: 'david26@gmail.com',
+      birthDate: '1990-01-01',
       createdAt: '2026-05-04T02:06:07.024Z'
     });
   }, []);
