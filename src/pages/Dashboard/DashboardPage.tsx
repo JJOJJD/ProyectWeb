@@ -19,7 +19,7 @@ import type { Notification } from '../../types';
 import axios from 'axios';
 import '../../styles/Dashboard.css';
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
 
 interface ActionCard {
   id: string;

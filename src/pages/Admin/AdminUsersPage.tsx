@@ -5,7 +5,7 @@ import type { User } from '../../types';
 import axios from 'axios';
 import '../../styles/AdminUsers.css';
 
-const API_URL = 'http://localhost:3000/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
 
 export default function AdminUsersPage() {
   const [searchQuery, setSearchQuery] = useState('');
